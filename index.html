@@ -77,6 +77,17 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+
+        <section>
+            <div class="container">
+            <h2 class="text-info mt-5">How Does javascript Works ?</h2>
+            <p class="text-success">  একটা javascript প্রোগ্রাম শুরু হওয়ার সাথে সাথে একটা global execution context create হয়ে যায় । এটার দুইটা পার্ট থাকে। একটা হলো memory creation phase . অন্যটা হলো code execution phase. Memory creation phase এ সব ভ্যারিয়েবল,ফাংশন এর জন্য মেমোরি এলোকেট করা হয় এবং ভেরিয়েবল এ default value হিসেবে undifined সেট করে দেওয়া হয়। এরপর code execution phase এ লাইন বাই লাইন কোড রান করে । এক্ষেত্রে নতুন ফাংশন কল হলে নতুন আরেকটি brand new execution context create হয় । ফাংশন যখন রিটার্ন করে তখন সেটিও ধ্বংস হয়ে যায়। global execution context এ control চলে আসে। আর এই পুরো ব্যাপারটির সিকুয়েঞ্চ ঠিক রাখে একটি call stack . যেখান থেকে ঠিক হয় কোডের কন্ট্রোল কখন কার কাছে যাবে। </p>
+            <h2 class="text-info mt-5">What Does javascript Event Loop Do ? </h2>
+            <p class="text-success"> Javascript এ দুই ধরনের কমান্ড থাকে । ১) Synchronous ২) Asynchronous . Synchronous কমান্ড গুলোর সিকুয়েঞ্চ ঠিক রাখার জন্য কাজ করে একটি Stack . আর asynchronous কমান্ড গুলোর সিকুয়েঞ্চ ঠিক রাখে একটি Queue. stack ও queue এর মাঝখানে অবস্থান করে event loop . এটার কাজ হচ্ছে , stack এর কমান্ড গুলো শেষ হলে , queue থেকে সিকুয়েঞ্চ অনুযায়ী কমান্ড গুলোকে call stack এ পাঠিয়ে দেওয়া। </p>
+            <h2 class="text-info mt-5">What is the difference between local storage and session storage ?</h2>
+            <p class="text-success"> Session storage ও local storage দুইটার কাজই হচ্ছে ডাটা জমা করে রাখা । তবে local storage এ ডাটা সেভ করলে সেটা পারমানেন্ট স্টাইলে থাকে (until user delete or clear the data) কিন্তু session storage এ ডাটা রাখলে সেটা tab বন্ধ হওয়ার সাথে সাথেই destroy হয়ে যায় । আমরা দীর্ঘ সময় ডাটা জমা রাখার জন্য local storage ব্যবহার করি। কিন্তু session storage ব্যবহার করি , temporary data জমা রাখার জন্য। </p>
+        </div>
+        </section>
         <footer></footer>
 
         <!-- add javascript  file  -->

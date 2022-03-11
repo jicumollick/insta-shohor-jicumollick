@@ -135,7 +135,7 @@ const createPost = (post) => {
                 </div>
               </div>
       `;
-      console.log(post);
+    
     return div;
 };
 
